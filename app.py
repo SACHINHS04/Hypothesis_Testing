@@ -6,9 +6,12 @@ from scipy import stats
 st.title("Hypothesis Testing with Streamlit")
 
 @st.cache(suppress_st_warning=True)
-def load_data(file):
+def load_data(file=None):
+    if file is None:
+        return None
     df = pd.read_csv(file)
     return df
+
 
 data = load_data()
 
