@@ -48,7 +48,7 @@ def main():
     if test == "T-Test":
         column2 = st.selectbox("Column 2", df.columns)
         alpha = st.slider("Significance level (alpha)", 0.0, 1.0, step=0.01, value=0.05)
-                t_test(df, column1, column2, alpha)
+        t_test(df, column1, column2, alpha)
     elif test == "ANOVA":
         group_column = st.selectbox("Grouping Column", df.columns)
         alpha = st.slider("Significance level (alpha)", 0.0, 1.0, step=0.01, value=0.05)
