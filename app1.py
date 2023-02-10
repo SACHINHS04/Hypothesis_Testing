@@ -72,7 +72,7 @@ if file is not None:
     st.write("Number of columns:", df.shape[1])
     st.write("Column Names:", df.columns)
     
-    alpha = st.sidebar.slider("Choose the Alpha Level", 0.01, 0.05, 0.05)
+    alpha = st.sidebar.slider("Choose the Alpha Level", 0.01, 0.01, 1.0)
     test_type = st.sidebar.selectbox("Choose the Test Type", ["Two-Sample T-Test", "Paired T-Test", "One-Sample T-Test", "ANOVA", "2-Way ANOVA", "Chi-Square Test"])
     
     if test_type in ["Two-Sample T-Test", "Paired T-Test", "One-Sample T-Test"]:
