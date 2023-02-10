@@ -59,8 +59,8 @@ def chi_square_test(df, column1, column2, alpha):
         st.write("Reject Null Hypothesis. There is a relationship between", column1, "and", column2)
     else:
         st.write("Fail to Reject Null Hypothesis. There is no relationship between", column1, "and", column2)
-    st.write("Chi-Square Statistic:", chi2)
-    st.write("P-Value:", p_value)
+        st.write("Chi-Square Statistic:", chi2)
+        st.write("P-Value:", p_value)
 
 st.title("Hypothesis Testing with Streamlit")
 
