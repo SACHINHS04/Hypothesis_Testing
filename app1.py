@@ -48,7 +48,7 @@ def main():
     file = st.file_uploader("Choose a CSV file", type="csv")
     df= load_data(file)
     if df is None:
-    st.write("No data was uploaded.")
+        st.write("No data was uploaded.")
     return
 
 st.write("Select the test you want to perform:")
