@@ -68,4 +68,4 @@ elif test == "Chi-Squared Test":
     alpha = st.slider("Significance level (alpha)", 0.0, 1.0, step=0.01, value=0.05)
     chi_squared_test(df, column1, column2, alpha)
 if name == 'main':
-main()
+    main()
