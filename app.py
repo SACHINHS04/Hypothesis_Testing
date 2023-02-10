@@ -49,7 +49,7 @@ if data is not None:
                 st.write("We fail to reject the null hypothesis. The sample mean is not significantly different from the hypothesized mean.")
         elif hypothesis_choice == 'ANOVA':
             result = stats.f_oneway(df[selected_columns].values)
-                        st.write("The F-statistic is %.3f and the p-value is %.3f." % result)
+            st.write("The F-statistic is %.3f and the p-value is %.3f." % result)
             if result[1] < alpha:
                 st.write("We reject the null hypothesis. There is a significant difference among the means of the groups.")
             else:
